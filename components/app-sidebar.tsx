@@ -14,6 +14,7 @@ import {
   SidebarRail,
 } from "@/components/ui/sidebar"
 import { GalleryVerticalEndIcon, AudioLinesIcon, TerminalIcon, TerminalSquareIcon, BotIcon, BookOpenIcon, Settings2Icon, FrameIcon, PieChartIcon, MapIcon } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 // This is sample data.
 const data = {
@@ -50,7 +51,7 @@ const data = {
   ],
   navMain: [
     {
-      title: "Playground",
+      title: "Free Tools",
       url: "#",
       icon: (
         <TerminalSquareIcon
@@ -59,8 +60,8 @@ const data = {
       isActive: true,
       items: [
         {
-          title: "History",
-          url: "#",
+          titleKey: "jsonEditor",
+          url: "/free/json-editor",
         },
         {
           title: "Starred",
@@ -176,14 +177,26 @@ const data = {
 }
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+  const t = useTranslations("Sidebar")
+
+  // Map translations to navMain items
+  const navMainWithTranslations = data.navMain.map((navGroup) => ({
+    ...navGroup,
+    items: navGroup.items?.map((item) => ({
+      title: 'titleKey' in item && item.titleKey
+        ? t(item.titleKey as Parameters<typeof t>[0])
+        : (item.title || ""),
+      url: item.url,
+    }))
+  }))
+
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
         <TeamSwitcher teams={data.teams} />
       </SidebarHeader>
       <SidebarContent>
-        <NavMain items={data.navMain} />
-        <NavProjects projects={data.projects} />
+        <NavMain items={navMainWithTranslations} />
       </SidebarContent>
       <SidebarFooter>
         <NavUser user={data.user} />

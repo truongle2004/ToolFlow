@@ -1,5 +1,27 @@
 {
-  "HomePage": {
-    "title": "Xin chào thế giới"
+  "JsonEditor": {
+    "title": "Trình sửa JSON",
+    "breadcrumb1": "Xây dựng ứng dụng",
+    "breadcrumb2": "Lấy dữ liệu",
+    "awaitingInput": "Đang chờ nhập",
+    "validJson": "JSON Hợp lệ",
+    "invalidJson": "JSON Không hợp lệ",
+    "format": "Định dạng",
+    "autoFormat": "Tự động định dạng JSON",
+    "copy": "Sao chép",
+    "copied": "Đã sao chép!",
+    "copyToClipboard": "Sao chép vào khay nhớ tạm",
+    "clear": "Xóa",
+    "clearEditor": "Xóa trình sửa",
+    "lines": "dòng",
+    "chars": "ký tự",
+    "placeholder": "// Dán hoặc nhập JSON của bạn tại đây...",
+    "jsonUtf8": "JSON · UTF-8",
+    "tabSpaces": "Tab: 2 khoảng trắng",
+    "github": "GitHub",
+    "studio": "ToolFlow Studio"
+  },
+  "Sidebar": {
+    "jsonEditor": "Trình sửa JSON"
   }
 }

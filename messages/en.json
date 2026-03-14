@@ -1,5 +1,27 @@
 {
-  "HomePage": {
-    "title": "Hello world!"
+  "JsonEditor": {
+    "title": "JSON Editor",
+    "breadcrumb1": "Build Your Application",
+    "breadcrumb2": "Data Fetching",
+    "awaitingInput": "Awaiting Input",
+    "validJson": "Valid JSON",
+    "invalidJson": "Invalid JSON",
+    "format": "Format",
+    "autoFormat": "Auto-format JSON",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "copyToClipboard": "Copy to clipboard",
+    "clear": "Clear",
+    "clearEditor": "Clear editor",
+    "lines": "lines",
+    "chars": "chars",
+    "placeholder": "// Paste or type your JSON here...",
+    "jsonUtf8": "JSON · UTF-8",
+    "tabSpaces": "Tab: 2 spaces",
+    "github": "GitHub",
+    "studio": "ToolFlow Studio"
+  },
+  "Sidebar": {
+    "jsonEditor": "JSON Editor"
   }
 }

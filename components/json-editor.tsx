@@ -5,6 +5,7 @@ import "ace-builds/src-noconflict/mode-json";
 import "ace-builds/src-noconflict/theme-github";
 import "ace-builds/src-noconflict/ext-language_tools";
 import { useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -36,6 +37,7 @@ function isJsonObject(str: string): boolean {
 }
 
 export default function ToolFlowJsonEditor() {
+  const t = useTranslations("JsonEditor");
   const [data, setData] = useState<string>("");
   const [isValid, setIsValid] = useState<boolean | null>(null);
   const [lineCount, setLineCount] = useState<number>(1);
@@ -63,7 +65,7 @@ export default function ToolFlowJsonEditor() {
     try {
       const parsed = JSON.parse(data);
       setData(JSON.stringify(parsed, null, 2));
-    } catch {}
+    } catch { }
   };
 
   const handleCopy = () => {
@@ -80,18 +82,18 @@ export default function ToolFlowJsonEditor() {
   const statusBadge = (() => {
     if (isValid === null)
       return {
-        label: "Awaiting Input",
+        label: t("awaitingInput"),
         variant: "secondary" as const,
         icon: <Clock className="w-3 h-3" />,
       };
     if (isValid)
       return {
-        label: "Valid JSON",
+        label: t("validJson"),
         variant: "default" as const,
         icon: <CheckCircle className="w-3 h-3" />,
       };
     return {
-      label: "Invalid JSON",
+      label: t("invalidJson"),
       variant: "destructive" as const,
       icon: <XCircle className="w-3 h-3" />,
     };
@@ -99,13 +101,13 @@ export default function ToolFlowJsonEditor() {
 
   return (
     <TooltipProvider>
-      <div className="rounded-lg border border-border/50 overflow-hidden">
+      <div className="w-full rounded-lg border border-border/50 overflow-hidden">
         {/* Header */}
         <div className="flex items-center justify-between px-4 py-2.5 border-b border-border/50">
           <div className="flex items-center gap-2">
-            <p className="text-sm font-medium">JSON Editor</p>
+            <p className="text-sm font-medium">{t("title")}</p>
             <span className="text-xs text-muted-foreground">
-              · ToolFlow Studio
+              · {t("studio")}
             </span>
           </div>
           <Badge
@@ -124,10 +126,10 @@ export default function ToolFlowJsonEditor() {
               <TooltipTrigger asChild>
                 <Button variant="default" size="sm" onClick={handleFormat}>
                   <WandSparkles className="w-3.5 h-3.5 mr-1.5" />
-                  Format
+                  {t("format")}
                 </Button>
               </TooltipTrigger>
-              <TooltipContent>Auto-format JSON</TooltipContent>
+              <TooltipContent>{t("autoFormat")}</TooltipContent>
             </Tooltip>
 
             <Tooltip>
@@ -141,18 +143,18 @@ export default function ToolFlowJsonEditor() {
                   {copied ? (
                     <>
                       <Check className="w-3.5 h-3.5 mr-1.5" />
-                      Copied!
+                      {t("copied")}
                     </>
                   ) : (
                     <>
                       <Clipboard className="w-3.5 h-3.5 mr-1.5" />
-                      Copy
+                      {t("copy")}
                     </>
                   )}
                 </Button>
               </TooltipTrigger>
               <TooltipContent>
-                {copied ? "Copied!" : "Copy to clipboard"}
+                {copied ? t("copied") : t("copyToClipboard")}
               </TooltipContent>
             </Tooltip>
 
@@ -165,15 +167,15 @@ export default function ToolFlowJsonEditor() {
                   className="text-muted-foreground hover:text-destructive hover:bg-destructive/10"
                 >
                   <Trash2 className="w-3.5 h-3.5 mr-1.5" />
-                  Clear
+                  {t("clear")}
                 </Button>
               </TooltipTrigger>
-              <TooltipContent>Clear editor</TooltipContent>
+              <TooltipContent>{t("clearEditor")}</TooltipContent>
             </Tooltip>
           </div>
 
           <span className="text-xs text-muted-foreground">
-            {lineCount} lines · {charCount} chars
+            {lineCount} {t("lines")} · {charCount} {t("chars")}
           </span>
         </div>
 
@@ -186,7 +188,7 @@ export default function ToolFlowJsonEditor() {
           name="json_editor"
           width="100%"
           height="420px"
-          placeholder="// Paste or type your JSON here..."
+          placeholder={t("placeholder")}
           setOptions={{
             useWorker: false,
             enableBasicAutocompletion: true,
@@ -203,12 +205,12 @@ export default function ToolFlowJsonEditor() {
         <Separator className="opacity-50" />
         <div className="flex items-center justify-between px-4 py-1.5">
           <span className="text-xs text-muted-foreground/60 uppercase tracking-widest">
-            JSON · UTF-8
+            {t("jsonUtf8")}
           </span>
           <div className="flex items-center gap-3 text-xs text-muted-foreground/60">
-            <span>Tab: 2 spaces</span>
+            <span>{t("tabSpaces")}</span>
             <Separator orientation="vertical" className="h-3 opacity-50" />
-            <span>GitHub</span>
+            <span>{t("github")}</span>
           </div>
         </div>
       </div>
