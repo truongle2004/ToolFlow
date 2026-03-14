@@ -1,7 +1,7 @@
 'use client';
 import { AppSidebar } from '@/components/app-sidebar';
 import { BlurCard } from '@/components/blur-card';
-import JsonEditor from '@/components/json-editor';
+import PomodoroTimer from '@/components/pomodoro-timer';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -18,13 +18,14 @@ import {
 } from '@/components/ui/sidebar';
 import { useTranslations } from 'next-intl';
 
-export default function JsonEditorPage() {
-  const t = useTranslations('JsonEditor');
+export default function PomodoroTimerPage() {
+  const t = useTranslations('PomodoroTimer');
+
   return (
     <SidebarProvider>
       <AppSidebar />
       <SidebarInset>
-        <header className='flex h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12'>
+        <header className='flex h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12 border-b border-border'>
           <div className='flex items-center gap-2 px-4'>
             <SidebarTrigger className='-ml-1' />
             <Separator
@@ -34,25 +35,27 @@ export default function JsonEditorPage() {
             <Breadcrumb>
               <BreadcrumbList>
                 <BreadcrumbItem className='hidden md:block'>
-                  <BreadcrumbLink href='#'>{t('breadcrumb1')}</BreadcrumbLink>
+                  <BreadcrumbLink
+                    href='#'
+                    className='text-muted-foreground hover:text-foreground text-sm transition-colors'
+                  >
+                    {t('breadcrumb1')}
+                  </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className='hidden md:block' />
                 <BreadcrumbItem>
-                  <BreadcrumbPage>{t('breadcrumb2')}</BreadcrumbPage>
+                  <BreadcrumbPage className='text-foreground font-medium text-sm'>
+                    {t('breadcrumb2')}
+                  </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
           </div>
         </header>
-        <div className='flex flex-1 flex-col gap-4 p-4 pt-0'>
-          <div className='grid auto-rows-min gap-4 md:grid-cols-3'>
-            <div className='col-span-3'>
-              <BlurCard title={t('title')} subTitle={t('subTitle')}>
-                <JsonEditor />
-              </BlurCard>
-            </div>
-          </div>
-        </div>
+
+        <BlurCard title={t('title')} subTitle={t('subTitle')}>
+          <PomodoroTimer />
+        </BlurCard>
       </SidebarInset>
     </SidebarProvider>
   );

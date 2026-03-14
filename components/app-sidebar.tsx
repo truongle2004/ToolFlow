@@ -64,8 +64,8 @@ const data = {
           url: "/free/json-editor",
         },
         {
-          title: "Starred",
-          url: "#",
+          titleKey: "pomodoroTimer",
+          url: "/free/pomodoro-timer",
         },
         {
           title: "Settings",

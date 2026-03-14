@@ -1,6 +1,7 @@
 {
   "JsonEditor": {
     "title": "JSON Editor",
+    "subTitle": "Format, validate, and manipulate your JSON data.",
     "breadcrumb1": "Build Your Application",
     "breadcrumb2": "Data Fetching",
     "awaitingInput": "Awaiting Input",
@@ -22,6 +23,24 @@
     "studio": "ToolFlow Studio"
   },
   "Sidebar": {
-    "jsonEditor": "JSON Editor"
+    "jsonEditor": "JSON Editor",
+    "pomodoroTimer": "Pomodoro Timer"
+  },
+  "PomodoroTimer": {
+    "title": "Pomodoro Timer",
+    "subTitle": "Boost your productivity with a customizable Pomodoro timer and statistics.",
+    "breadcrumb1": "Build Your Application",
+    "breadcrumb2": "Productivity Tools",
+    "start": "Start",
+    "pause": "Pause",
+    "resume": "Resume",
+    "reset": "Reset",
+    "pomodoro": "Pomodoro",
+    "shortBreak": "Short Break",
+    "longBreak": "Long Break",
+    "statsToday": "Today's Statistics",
+    "completedPomodoros": "Completed",
+    "focusTime": "Focus Time (min)",
+    "studio": "ToolFlow Studio"
   }
 }
