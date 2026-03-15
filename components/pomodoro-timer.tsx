@@ -17,25 +17,16 @@ import { Progress } from '@/components/ui/progress';
 import { Separator } from '@/components/ui/separator';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
-const MODES = {
-  pomodoro: { id: 'pomodoro', time: 25 * 60, icon: Brain },
-  shortBreak: { id: 'shortBreak', time: 5 * 60, icon: Coffee },
-  longBreak: { id: 'longBreak', time: 15 * 60, icon: Coffee },
-};
-
-type ModeKey = keyof typeof MODES;
-
-interface DailyStats {
-  date: string;
-  completedPomodoros: number;
-  focusTimeMinutes: number;
-}
+import { POMODORO_MODES } from '@/lib/constants/pomodoro';
+import type { ModeKey, DailyStats } from '@/lib/types/pomodoro';
 
 export default function PomodoroTimer() {
   const t = useTranslations('PomodoroTimer');
 
   const [mode, setMode] = useState<ModeKey>('pomodoro');
-  const [timeLeft, setTimeLeft] = useState<number>(MODES.pomodoro.time);
+  const [timeLeft, setTimeLeft] = useState<number>(
+    POMODORO_MODES.pomodoro.time,
+  );
   const [isActive, setIsActive] = useState<boolean>(false);
   const [stats, setStats] = useState<DailyStats>({
     date: new Date().toDateString(),
@@ -81,7 +72,8 @@ export default function PomodoroTimer() {
         setStats((prev) => ({
           ...prev,
           completedPomodoros: prev.completedPomodoros + 1,
-          focusTimeMinutes: prev.focusTimeMinutes + MODES.pomodoro.time / 60,
+          focusTimeMinutes:
+            prev.focusTimeMinutes + POMODORO_MODES.pomodoro.time / 60,
         }));
         const newPomodoros = stats.completedPomodoros + 1;
         if (newPomodoros % 4 === 0) {
@@ -101,14 +93,14 @@ export default function PomodoroTimer() {
 
   const switchMode = useCallback((newMode: ModeKey) => {
     setMode(newMode);
-    setTimeLeft(MODES[newMode].time);
+    setTimeLeft(POMODORO_MODES[newMode].time);
     setIsActive(false);
   }, []);
 
   const toggleTimer = () => setIsActive(!isActive);
   const resetTimer = () => {
     setIsActive(false);
-    setTimeLeft(MODES[mode].time);
+    setTimeLeft(POMODORO_MODES[mode].time);
   };
 
   const formatTime = (seconds: number) => {
@@ -117,8 +109,9 @@ export default function PomodoroTimer() {
     return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
   };
 
-  const progress = ((MODES[mode].time - timeLeft) / MODES[mode].time) * 100;
-  const ModeIcon = MODES[mode].icon;
+  const progress =
+    ((POMODORO_MODES[mode].time - timeLeft) / POMODORO_MODES[mode].time) * 100;
+  const ModeIcon = POMODORO_MODES[mode].icon;
 
   return (
     <div className='w-full grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 gap-6 h-full min-h-[600px]'>

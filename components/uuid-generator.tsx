@@ -18,10 +18,12 @@ import {
 } from "@/components/ui/select";
 import { Slider } from "@/components/ui/slider";
 
+import type { UuidVersion } from "@/lib/types/uuid";
+
 export function UuidGenerator() {
   const t = useTranslations("UuidGenerator");
   const [uuids, setUuids] = useState<string[]>([uuidv4()]);
-  const [version, setVersion] = useState<"v1" | "v4" | "v7">("v4");
+  const [version, setVersion] = useState<UuidVersion>("v4");
   const [quantity, setQuantity] = useState(1);
   const [uppercase, setUppercase] = useState(false);
   const [hyphens, setHyphens] = useState(true);
