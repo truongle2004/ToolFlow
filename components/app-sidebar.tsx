@@ -68,6 +68,10 @@ const data = {
           url: "/free/pomodoro-timer",
         },
         {
+          titleKey: "uuidGenerator",
+          url: "/free/uuid-generator",
+        },
+        {
           title: "Settings",
           url: "#",
         },

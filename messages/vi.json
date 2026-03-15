@@ -24,7 +24,26 @@
   },
   "Sidebar": {
     "jsonEditor": "Trình sửa JSON",
-    "pomodoroTimer": "Đồng hồ Pomodoro"
+    "pomodoroTimer": "Đồng hồ Pomodoro",
+    "uuidGenerator": "Trình tạo UUID"
+  },
+  "UuidGenerator": {
+    "title": "Trình tạo UUID",
+    "subTitle": "Tạo định danh duy nhất toàn cầu (UUID) ngay lập tức.",
+    "breadcrumb1": "Xây dựng ứng dụng",
+    "breadcrumb2": "Công cụ Lập trình",
+    "generate": "Tạo UUID",
+    "copyAll": "Sao chép tất cả",
+    "copied": "Đã sao chép!",
+    "version": "Phiên bản",
+    "quantity": "Số lượng",
+    "hyphens": "Bao gồm dấu gạch ngang",
+    "uppercase": "Chữ in hoa",
+    "braces": "Bao gồm ngoặc nhọn {}",
+    "v1Name": "UUID v1 (Dựa trên thời gian)",
+    "v4Name": "UUID v4 (Ngẫu nhiên)",
+    "v7Name": "UUID v7 (Sắp xếp theo thời gian)",
+    "studio": "ToolFlow Studio"
   },
   "PomodoroTimer": {
     "title": "Đồng hồ Pomodoro",

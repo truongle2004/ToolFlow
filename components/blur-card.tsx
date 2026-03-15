@@ -18,7 +18,7 @@ export function BlurCard({ children, title, subTitle }: BlurCardProps) {
           <p className='text-sm text-muted-foreground'>{subTitle}</p>
         </div>
 
-        <div className='flex flex-col items-center justify-center flex-1 bg-card text-card-foreground border border-border rounded-3xl p-10'>
+        <div className='flex flex-col w-full flex-1 bg-card text-card-foreground border border-border rounded-3xl p-6 sm:p-10'>
           {children}
         </div>
       </div>

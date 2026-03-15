@@ -24,7 +24,26 @@
   },
   "Sidebar": {
     "jsonEditor": "JSON Editor",
-    "pomodoroTimer": "Pomodoro Timer"
+    "pomodoroTimer": "Pomodoro Timer",
+    "uuidGenerator": "UUID Generator"
+  },
+  "UuidGenerator": {
+    "title": "UUID Generator",
+    "subTitle": "Generate universally unique identifiers (UUIDs) instantly.",
+    "breadcrumb1": "Build Your Application",
+    "breadcrumb2": "Developer Tools",
+    "generate": "Generate UUIDs",
+    "copyAll": "Copy All",
+    "copied": "Copied!",
+    "version": "Version",
+    "quantity": "Quantity",
+    "hyphens": "Include Hyphens",
+    "uppercase": "Uppercase",
+    "braces": "Include Braces {}",
+    "v1Name": "UUID v1 (Time-based)",
+    "v4Name": "UUID v4 (Random)",
+    "v7Name": "UUID v7 (Time-ordered)",
+    "studio": "ToolFlow Studio"
   },
   "PomodoroTimer": {
     "title": "Pomodoro Timer",
