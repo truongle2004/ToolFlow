@@ -72,6 +72,10 @@ const data = {
           url: "/free/uuid-generator",
         },
         {
+          titleKey: "markdownEditor",
+          url: "/free/markdown-editor",
+        },
+        {
           title: "Settings",
           url: "#",
         },

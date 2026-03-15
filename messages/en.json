@@ -25,7 +25,14 @@
   "Sidebar": {
     "jsonEditor": "JSON Editor",
     "pomodoroTimer": "Pomodoro Timer",
-    "uuidGenerator": "UUID Generator"
+    "uuidGenerator": "UUID Generator",
+    "markdownEditor": "Markdown Editor"
+  },
+  "MarkdownEditor": {
+    "title": "Markdown Editor",
+    "subTitle": "Write, preview, and format markdown files seamlessly.",
+    "breadcrumb1": "Build Your Application",
+    "breadcrumb2": "Writer Tools"
   },
   "UuidGenerator": {
     "title": "UUID Generator",

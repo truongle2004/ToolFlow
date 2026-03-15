@@ -25,7 +25,14 @@
   "Sidebar": {
     "jsonEditor": "Trình sửa JSON",
     "pomodoroTimer": "Đồng hồ Pomodoro",
-    "uuidGenerator": "Trình tạo UUID"
+    "uuidGenerator": "Trình tạo UUID",
+    "markdownEditor": "Trình sửa Markdown"
+  },
+  "MarkdownEditor": {
+    "title": "Trình sửa Markdown",
+    "subTitle": "Viết, xem trước, và định dạng tệp markdown nhanh chóng.",
+    "breadcrumb1": "Xây dựng ứng dụng",
+    "breadcrumb2": "Công cụ Soạn thảo"
   },
   "UuidGenerator": {
     "title": "Trình tạo UUID",
