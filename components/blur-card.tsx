@@ -6,7 +6,7 @@ interface BlurCardProps {
 
 export function BlurCard({ children, title, subTitle }: BlurCardProps) {
   return (
-    <div className='flex flex-1 flex-col gap-6 p-8 pt-6'>
+    <div className='flex flex-1 flex-col gap-6 p-8 pt-6 w-full min-h-screen'>
       <div className='flex flex-col gap-6 h-full'>
         <div className='flex flex-col gap-1'>
           <h1

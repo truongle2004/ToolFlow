@@ -44,13 +44,11 @@ export default function JsonEditorPage() {
             </Breadcrumb>
           </div>
         </header>
-        <div className='flex flex-1 flex-col gap-4 p-4 pt-0'>
-          <div className='grid auto-rows-min gap-4 md:grid-cols-3'>
-            <div className='col-span-3'>
-              <BlurCard title={t('title')} subTitle={t('subTitle')}>
-                <JsonEditor />
-              </BlurCard>
-            </div>
+        <div className='grid auto-rows-min gap-4 md:grid-cols-3'>
+          <div className='col-span-3'>
+            <BlurCard title={t('title')} subTitle={t('subTitle')}>
+              <JsonEditor />
+            </BlurCard>
           </div>
         </div>
       </SidebarInset>
