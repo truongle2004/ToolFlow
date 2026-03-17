@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { NextIntlClientProvider } from "next-intl";
+import { SidebarProvider } from "@/components/ui/sidebar";
 
 const fontSans = Geist({
   subsets: ["latin"],

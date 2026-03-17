@@ -26,7 +26,8 @@
     "jsonEditor": "JSON Editor",
     "pomodoroTimer": "Pomodoro Timer",
     "uuidGenerator": "UUID Generator",
-    "markdownEditor": "Markdown Editor"
+    "markdownEditor": "Markdown Editor",
+    "wheelOfName": "Wheel Of Names"
   },
   "MarkdownEditor": {
     "title": "Markdown Editor",
@@ -68,5 +69,13 @@
     "completedPomodoros": "Completed",
     "focusTime": "Focus Time (min)",
     "studio": "ToolFlow Studio"
+  },
+  "WheelOfName": {
+    "title": "Wheel of Names",
+    "subTitle": "Spin the wheel to randomly select a winner from your list of names. Perfect for games, contests, and random selections.",
+    "breadcrumb1": "Build Your Application",
+    "breadcrumb2": "Wheel Of Names "
+
   }
 }
+
