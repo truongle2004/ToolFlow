@@ -1,6 +1,5 @@
 "use client";
 import { AppSidebar } from "@/components/app-sidebar";
-import JsonEditor from "@/components/json-editor";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -15,6 +14,7 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
+import JsonEditor from "@/features/json-editor/components/JsonEditor";
 import { useTranslations } from "next-intl";
 
 export default function Page() {
