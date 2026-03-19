@@ -1,7 +1,7 @@
 "use client";
 import { BlurCard } from "@/components/blur-card";
 import BreadCrumb from "@/components/bread-crumb";
-import { UuidGenerator } from "@/components/uuid-generator";
+import { UuidGenerator } from "@/features/uuid-generator/components/UuidGenerator";
 import { useTranslations } from "next-intl";
 
 export default function UuidGeneratorPage() {

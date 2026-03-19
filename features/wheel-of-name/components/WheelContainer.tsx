@@ -1,9 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useWheel } from "../hooks/use-wheel";
-import { WheelInput } from "./wheel-input";
-import { WheelDisplay } from "./wheel-display";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -13,6 +10,9 @@ import {
   DialogFooter,
   DialogDescription,
 } from "@/components/ui/dialog";
+import { useWheel } from "../hooks/useWheel";
+import { WheelInput } from "./WheelInput";
+import { WheelDisplay } from "./WheelDisplay";
 
 export function WheelContainer() {
   const {

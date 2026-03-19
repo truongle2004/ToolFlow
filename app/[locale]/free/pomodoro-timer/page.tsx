@@ -1,7 +1,7 @@
 "use client";
 import { BlurCard } from "@/components/blur-card";
 import BreadCrumb from "@/components/bread-crumb";
-import PomodoroTimer from "@/components/pomodoro-timer";
+import PomodoroTimer from "@/features/pomodoro-timer/components/pomodoro-timer";
 import { useTranslations } from "next-intl";
 
 export default function PomodoroTimerPage() {
