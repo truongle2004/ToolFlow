@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 export default function WheelOfNamePage() {
   const t = useTranslations("WheelOfName");
   return (
-    <BreadCrumb firstBreadcrumb={t("breadcrumb1")} secondBreadcrumb={t("breadcrumb2")}>
+    <BreadCrumb breadcrumb={t("breadcrumb")}>
       <BlurCard title={t("title")} subTitle={t("subTitle")}>
         <WheelContainer />
       </BlurCard>

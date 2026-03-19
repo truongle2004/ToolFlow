@@ -2,8 +2,7 @@
   "JsonEditor": {
     "title": "Trình sửa JSON",
     "subTitle": "Định dạng, xác thực và thao tác dữ liệu JSON của bạn.",
-    "breadcrumb1": "Xây dựng ứng dụng",
-    "breadcrumb2": "Lấy dữ liệu",
+    "breadcrumb": "Lấy dữ liệu",
     "awaitingInput": "Đang chờ nhập",
     "validJson": "JSON Hợp lệ",
     "invalidJson": "JSON Không hợp lệ",
@@ -27,19 +26,18 @@
     "pomodoroTimer": "Đồng hồ Pomodoro",
     "uuidGenerator": "Trình tạo UUID",
     "markdownEditor": "Trình sửa Markdown",
-    "wheelOfName" : "Vòng quay may mắn"
+    "wheelOfName": "Vòng quay may mắn",
+    "speedTest": "Kiểm tra tốc độ mạng"
   },
   "MarkdownEditor": {
     "title": "Trình sửa Markdown",
     "subTitle": "Viết, xem trước, và định dạng tệp markdown nhanh chóng.",
-    "breadcrumb1": "Xây dựng ứng dụng",
-    "breadcrumb2": "Công cụ Soạn thảo"
+    "breadcrumb": "Công cụ Soạn thảo"
   },
   "UuidGenerator": {
     "title": "Trình tạo UUID",
     "subTitle": "Tạo định danh duy nhất toàn cầu (UUID) ngay lập tức.",
-    "breadcrumb1": "Xây dựng ứng dụng",
-    "breadcrumb2": "Công cụ Lập trình",
+    "breadcrumb": "Công cụ Lập trình",
     "generate": "Tạo UUID",
     "copyAll": "Sao chép tất cả",
     "copied": "Đã sao chép!",
@@ -56,8 +54,7 @@
   "PomodoroTimer": {
     "title": "Đồng hồ Pomodoro",
     "subTitle": "Tăng cường năng suất của bạn với đồng hồ Pomodoro có thể tùy chỉnh và thống kê.",
-    "breadcrumb1": "Xây dựng ứng dụng",
-    "breadcrumb2": "Công cụ Năng suất",
+    "breadcrumb2": "Đồng hồ Pomodoro",
     "start": "Bắt đầu",
     "pause": "Tạm dừng",
     "resume": "Tiếp tục",
@@ -73,7 +70,14 @@
   "WheelOfName": {
     "title": "Vòng Quay May Mắn",
     "subTitle": "Quay vòng để chọn ngẫu nhiên một người thắng cuộc từ danh sách tên của bạn. Hoàn hảo cho trò chơi, cuộc thi và lựa chọn ngẫu nhiên.",
-    "breadcrumb1": "Xây dựng ứng dụng",
-    "breadcrumb2": "Vòng quay may mắn"
+    "breadcrumb": "Vòng quay may mắn"
+  },
+  "SpeedTest": {
+    "title": "Kiểm tra tốc độ mạng",
+    "subTitle": "Đo tốc độ tải xuống, tải lên và độ trễ của kết nối Internet",
+    "breadcrum": "Kiểm tra tốc độ mạng"
+  },
+  "GeneralBreadcumb": {
+    "title": "Công cụ miễn phí"
   }
 }

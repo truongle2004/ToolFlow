@@ -1,18 +1,16 @@
 import { AppSidebar } from "@/components/app-sidebar";
-import { BlurCard } from "@/components/blur-card";
 import {
-  Breadcrumb,
-  BreadcrumbList,
-  BreadcrumbItem,
-  BreadcrumbSeparator,
+    Breadcrumb,
+    BreadcrumbItem,
+    BreadcrumbList,
+    BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import {
-  SidebarProvider,
-  SidebarInset,
-  SidebarTrigger,
-} from "@/components/ui/sidebar";
-import { WheelContainer } from "@/features/wheel-of-name/components/wheel-container";
 import { Separator } from "@/components/ui/separator";
+import {
+    SidebarInset,
+    SidebarProvider,
+    SidebarTrigger,
+} from "@/components/ui/sidebar";
 
 export default function DefaultPage() {
   return (

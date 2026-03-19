@@ -1,27 +1,27 @@
 import { ReactNode } from "react";
 import { AppSidebar } from "./app-sidebar";
 import {
-    Breadcrumb,
-    BreadcrumbItem,
-    BreadcrumbLink,
-    BreadcrumbList,
-    BreadcrumbPage,
-    BreadcrumbSeparator,
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
 } from "./ui/breadcrumb";
 import { Separator } from "./ui/separator";
 import { SidebarInset, SidebarProvider, SidebarTrigger } from "./ui/sidebar";
+import { useTranslations } from "next-intl";
 
 export type BreadCrumbProps = {
-  firstBreadcrumb: string;
-  secondBreadcrumb: string;
+  breadcrumb: string;
   children: ReactNode;
 };
 
 export default function BreadCrumb({
-  firstBreadcrumb,
-  secondBreadcrumb,
+  breadcrumb,
   children,
 }: Readonly<BreadCrumbProps>) {
+  const t = useTranslations("GeneralBreadcumb");
   return (
     <SidebarProvider>
       <AppSidebar />
@@ -36,11 +36,11 @@ export default function BreadCrumb({
             <Breadcrumb>
               <BreadcrumbList>
                 <BreadcrumbItem className="hidden md:block">
-                  <BreadcrumbLink href="#">{firstBreadcrumb}</BreadcrumbLink>
+                  <BreadcrumbLink href="#">{t("title")}</BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="hidden md:block" />
                 <BreadcrumbItem>
-                  <BreadcrumbPage>{secondBreadcrumb}</BreadcrumbPage>
+                  <BreadcrumbPage>{breadcrumb}</BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>

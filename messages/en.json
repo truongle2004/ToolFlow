@@ -2,8 +2,7 @@
   "JsonEditor": {
     "title": "JSON Editor",
     "subTitle": "Format, validate, and manipulate your JSON data.",
-    "breadcrumb1": "Build Your Application",
-    "breadcrumb2": "Data Fetching",
+    "breadcrumb": "Json Editor",
     "awaitingInput": "Awaiting Input",
     "validJson": "Valid JSON",
     "invalidJson": "Invalid JSON",
@@ -27,19 +26,18 @@
     "pomodoroTimer": "Pomodoro Timer",
     "uuidGenerator": "UUID Generator",
     "markdownEditor": "Markdown Editor",
-    "wheelOfName": "Wheel Of Names"
+    "wheelOfName": "Wheel Of Names",
+    "speedTest": "Speed Test"
   },
   "MarkdownEditor": {
     "title": "Markdown Editor",
     "subTitle": "Write, preview, and format markdown files seamlessly.",
-    "breadcrumb1": "Build Your Application",
-    "breadcrumb2": "Writer Tools"
+    "breadcrumb": "Writer Tools"
   },
   "UuidGenerator": {
     "title": "UUID Generator",
     "subTitle": "Generate universally unique identifiers (UUIDs) instantly.",
-    "breadcrumb1": "Build Your Application",
-    "breadcrumb2": "Developer Tools",
+    "breadcrumb": "UUID Generator",
     "generate": "Generate UUIDs",
     "copyAll": "Copy All",
     "copied": "Copied!",
@@ -56,8 +54,7 @@
   "PomodoroTimer": {
     "title": "Pomodoro Timer",
     "subTitle": "Boost your productivity with a customizable Pomodoro timer and statistics.",
-    "breadcrumb1": "Build Your Application",
-    "breadcrumb2": "Productivity Tools",
+    "breadcrumb": "Pomodoro timer",
     "start": "Start",
     "pause": "Pause",
     "resume": "Resume",
@@ -73,9 +70,14 @@
   "WheelOfName": {
     "title": "Wheel of Names",
     "subTitle": "Spin the wheel to randomly select a winner from your list of names. Perfect for games, contests, and random selections.",
-    "breadcrumb1": "Build Your Application",
-    "breadcrumb2": "Wheel Of Names "
-
+    "breadcrumb": "Wheel Of Names "
+  },
+  "SpeedTest": {
+    "title": "Internet Speed Test",
+    "subTitle": "Measure your download speed, upload speed, and latency",
+    "breadcumb": "Speed Test"
+  },
+  "GeneralBreadcumb": {
+    "title": "Free Tools"
   }
 }
-

@@ -8,10 +8,7 @@ export default function PomodoroTimerPage() {
   const t = useTranslations("PomodoroTimer");
 
   return (
-    <BreadCrumb
-      firstBreadcrumb={t("breadcrumb1")}
-      secondBreadcrumb={t("breadcrumb2")}
-    >
+    <BreadCrumb breadcrumb={t("breadcrumb")}>
       <BlurCard title={t("title")} subTitle={t("subTitle")}>
         <PomodoroTimer />
       </BlurCard>

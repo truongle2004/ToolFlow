@@ -7,10 +7,7 @@ import { useTranslations } from "next-intl";
 export default function MarkdownEditorPage() {
   const t = useTranslations("MarkdownEditor");
   return (
-    <BreadCrumb
-      firstBreadcrumb={t("breadcrumb1")}
-      secondBreadcrumb={t("breadcrumb2")}
-    >
+    <BreadCrumb breadcrumb={t("breadcrumb")}>
       <div className="grid auto-rows-min gap-4 md:grid-cols-3 p-4">
         <div className="col-span-3">
           <BlurCard title={t("title")} subTitle={t("subTitle")}>
