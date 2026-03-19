@@ -26,7 +26,8 @@
     "jsonEditor": "Trình sửa JSON",
     "pomodoroTimer": "Đồng hồ Pomodoro",
     "uuidGenerator": "Trình tạo UUID",
-    "markdownEditor": "Trình sửa Markdown"
+    "markdownEditor": "Trình sửa Markdown",
+    "wheelOfName" : "Vòng quay may mắn"
   },
   "MarkdownEditor": {
     "title": "Trình sửa Markdown",
@@ -68,5 +69,11 @@
     "completedPomodoros": "Hoàn thành",
     "focusTime": "Tg Tập trung (phút)",
     "studio": "ToolFlow Studio"
+  },
+  "WheelOfName": {
+    "title": "Vòng Quay May Mắn",
+    "subTitle": "Quay vòng để chọn ngẫu nhiên một người thắng cuộc từ danh sách tên của bạn. Hoàn hảo cho trò chơi, cuộc thi và lựa chọn ngẫu nhiên.",
+    "breadcrumb1": "Xây dựng ứng dụng",
+    "breadcrumb2": "Vòng quay may mắn"
   }
 }
